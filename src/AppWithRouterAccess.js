@@ -7,12 +7,39 @@ const AppWithRouterAccess = () => {
 
   return (
   <>
-    <header className="splash-header">
+    <header className="site-header">
+        <div className="inner-header">
+          <div className="full-logo">
+            <img src="img/logo.png" className="nav-logo" />
+            <div className="logo-text">
+              <h1 className="nav-title">HYPERBLOOM A.I.</h1>
+              <h2 className="nav-tagline">Life: Advanced</h2>
+            </div>
+          </div>
+          <nav className="site-nav">
+            <a className="site-nav__link">About Us</a>
+            <a className="site-nav__link">Services</a>
+            <a className="site-nav__link">People</a>
+            <a className="site-nav__link">Blog</a>
+            <a className="site-nav__link">Contact</a>
+          </nav>
+        </div>
     </header>
     <Routes>
       <Route path="/" exact element={<LandingPage />}/>
       <Route path="/about" component={About} />
     </Routes>
+    <footer className="site-footer">
+      <div className="col-3">
+        
+      </div>
+      <div className="col-3">
+
+      </div>
+      <div className="col-3">
+
+      </div>
+    </footer>
   </>
   )
 }

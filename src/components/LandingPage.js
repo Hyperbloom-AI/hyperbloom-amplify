@@ -4,42 +4,67 @@ function LandingPage() {
 
     return (
         <>
-        <header>
-          <h1>Consulting for creative computing and interactive intelligence.</h1>
-          <p>We're a team of engineers, scientists, and artists that build data-driven systems to improve the human experience.</p>
-          <a href='/contact' rel='nofollow'>Contact us</a>
-        </header>
-        <section>
-          <h2>Why work with us?</h2>
-          <p>We provides services at the intersection of artificial intelligence, user experience, and cloud computing.</p>
-          <p>Our teams deliver solutions like cognitive assistants for automating customer engagement recommendation systems for personalizing experiences forecasting to help customers make better decisions.</p>
-        </section>
-        <section>
-          <h2>Who we serve</h2>
-          <p>Our team automates the building of AI and machine learning solutions for the healthcare, education, and entertainment industries.</p>
-          <h3>Industries</h3>
-          <ul>
-            <li>Healthcare</li>
-            <li>Education</li>
-            <li>Entertainment</li>
-          </ul>
-          <h3>Solutions</h3>
-          <ul>
-            <li>Web applications</li>
-            <li>Software engineering</li>
-            <li>Artificial Intelligence</li>
-            <li>Machine Learning and Machine Learning Operations (MLOps)</li>
-          </ul>
-          <a href='/services' rel='nofollow'>Learn more about our solutions</a>
-        </section>
-        <section>
-          <h2>Who we are</h2>
-          <p>As a creative computing consulting firm, we work best with partners who understand the value of quality, the power of collaboration, and the success of a solutions-oriented approach.</p>
-          <a href='/about' rel='nofollow'>Check out our values</a>
-        </section>
-        <section>
-          <h2>Articles</h2>
-        </section>
+          <main>
+            <section className="splash-header">
+              <div id="spacer__adsgw"></div>
+              <div className="splash-content">
+                <aside className="splash-title__wrapper">
+                  <div className="splash-title-logo__wrapper">
+                    <img src="img/logo.png" className="splash-title-logo"/>
+                  </div>
+                  <div className="splash-title-content__wrapper">
+                    <h1 className="splash-title">Creative Cloud Computing</h1>
+                    <h2 className="splash-subtitle">Building data driven systems that improve the human experience.</h2>
+                    <button className="btn type-1">Learn About Us!</button>
+                  </div>
+                </aside>
+                <div className="splash-hero__wrapper">
+                  <img className="splash-hero" src="img/home-hero.png"/>
+                </div>
+              </div>
+
+            </section>
+            <section className="splash-supporters">
+              <div id="spacer__fefsf"></div>
+              <div className="supporters__wrapper">
+                <div className="supporters-container">
+                  <img className="supporter-logo" src="img/innowattslogo.png"/>
+                  <img className="supporter-logo" src="img/apnlogo.png"/>
+                  <img className="supporter-logo" src="img/jfranklogo.png"/>
+                  <img className="supporter-logo" src="img/innovativelogo-black.png"/>
+                </div>
+              </div>
+            </section>
+            <section className="mission-and-services">
+              <div className="mission__wrapper">
+                <h2>Hypermission.</h2>
+                <p className="large-p">Our mission is building data driven systems to improve the human experience</p>
+              </div>
+              <div className="services__wrapper">
+                <div className="services-left">
+                  <h2>Hyperservices.</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  <button className="btn type-1 centered">Read More.</button>
+                </div>
+                <div className="services-right">
+                  <img src="img/services-hero.png" className="services-hero"/>
+                </div>
+              </div>
+              <div className="people__wrapper">
+                <h2>Hyperfounders</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                <div className="promoted-people__wrapper">
+                  <img className="promoted_person" src="img/cmcn.jpg"/>
+                  <img className="promoted_person" src="img/cmcn.jpg"/>
+                  <img className="promoted_person" src="img/cmcn.jpg"/>
+                </div>
+                <p className="margin-ye">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                <button className="btn type-1 centered">Join the Team!</button>
+              </div>
+            </section>
+          </main>
         </>
     );
 }

@@ -3,8 +3,11 @@ import { HashRouter as Router } from 'react-router-dom';
 import AppWithRouterAccess from './AppWithRouterAccess';
 
 function App() {
+
+      
+
       return (
-        <div className="App">
+        <div className="App" data-theme="light">
           <Router>
               <AppWithRouterAccess/>
           </Router>

@@ -1,0 +1,219 @@
+/* 
+    SCAFFOLDING.CSS
+
+    This document covers scaffolding
+    # This contains most of [sizing, positioning, and flexing]
+    # All documents should follow the order listed below and should read top to bottom left to right when possible:
+        ## Tags
+        ## Classes
+        ## ID's
+            ### MEDIA (Same order as above in each)
+    # All font imports should be located in themes.css
+
+*/
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0
+}
+
+.site-header {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.full-logo {
+    width: 259px;
+    height: 49px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.logo-text {
+    display: flex;
+    flex-flow: column;
+}
+
+.nav-logo {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+} 
+
+.nav-title {
+    width: 187px;
+    height: 22px;
+    width: max-content;
+    margin-bottom: 0;
+}
+
+
+.nav-tagline {
+    width: 132px;
+    height: 22px;
+    font: normal normal normal 18px/22px Open Sauce One;
+}
+
+.splash-header {
+    width: 100%;
+    height: 65.3888888vh;
+    background: transparent linear-gradient(289deg, #2953C5 0%, #A41860 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-flow: column;
+}
+
+
+/* Height should match header height */
+#spacer__adsgw {
+    height: 100px;
+}
+
+#spacer__fefsf {
+    height: 145px
+}
+
+.inner-header {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav__link:not(:last-child) {
+    margin-right: 40px;
+}
+
+.splash-content {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.splash-title__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 90px;
+}
+
+.splash-title-logo__wrapper {
+    margin-right: 40px;
+}
+
+.splash-title-content__wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.splash-title {
+    width: 577px;
+    margin-bottom: 30px;
+}
+
+.splash-title-logo {
+    width: 108px;
+    height: 107px;
+    margin-top: 8px;
+}
+
+.splash-subtitle {
+    width: 397px
+}
+
+.splash-hero {
+    position: absolute;
+    top: 123px;
+    left: 630px;
+    height: 80vh
+}
+
+.supporters__wrapper {
+    width: 100%;
+    padding: 30px 60px;
+    margin-bottom: 75px;
+}
+
+.supporters-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.supporter-logo {
+    max-width: 20%;
+    max-height: 100px;
+}
+
+.supporter-logo:not(:last-child) {
+    margin-right: 7%;
+}
+
+.services__wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.services-left {
+    max-width: 675px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.services-hero {
+    width: 812px;
+    height: 761px;
+}
+
+.mission__wrapper {
+    margin-bottom: 100px;
+}
+
+.people__wrapper {
+    margin-top: 80px;
+    padding: 75px 20%;
+    background-color: #F8F8F8;
+}
+
+.promoted_person {
+    border-radius: 5%;
+    max-width: 32%;
+}
+
+.promoted-people__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 50px 0 85px 0;
+}
+
+.margin-ye {
+    margin-bottom: 55px;
+}
+
+.site-footer {
+    min-height: 100px;
+    width: 100%
+}
