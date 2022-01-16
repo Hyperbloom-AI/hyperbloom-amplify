@@ -1,5 +1,9 @@
 /* buttons */
 
+.link {
+    cursor: pointer;
+}
+
 .btn {
     border: none;
 }
@@ -14,6 +18,11 @@
     padding: 10px 15px;
     text-align: center;
     font: normal normal 300 20px/30px Open Sauce One;
+    transition-duration: 500ms;
+}
+
+.btn.type-1:hover {
+    background-color: #b97429;
 }
 
 .btn.centered {

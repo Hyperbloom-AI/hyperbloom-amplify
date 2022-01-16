@@ -213,7 +213,72 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 55px;
 }
 
+.blog__wrapper {
+    margin-top: 15px;
+    padding: 75px 20%;
+    background-color: #FFFFFF;
+}
+
+.new-posts__wrapper {
+    padding: 15px 20px
+}
+
+.featured-post__hero-image {
+    width: 100%
+}
+
+
+.other-posts__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
 .site-footer {
     min-height: 100px;
     width: 100%
+}
+
+.featured-post__small {
+    border-radius: 15px;
+    background-color: #efefef;
+}
+
+.featured-post__small__hero-image {
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.featured-post__hero-image {
+    border-radius: 15px 15px 0 0;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.featured-post__small:not(:last-child) {
+    margin-right: 10px;
+}
+
+.featured-post__small__context {
+    padding: 10px 25px
+}
+
+.featured-post__context {
+    padding: 10px 25px
+}
+
+.featured-post__small__context h3 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.featured-post {
+    margin-bottom: 45px;
+    background-color: #efefef;
+    border-radius: 15px;
+}
+
+.featured-post h2 {
+    font-size: 39px;
+    text-align: left !important;
 }

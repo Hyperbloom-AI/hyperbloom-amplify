@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;900&display=swap');
 
+* {
+    transition-duration: 500ms;
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -94,4 +98,8 @@ section h2:not(.splash-subtitle) {
 
 .site-footer {
     background: #4F3B6D 0% 0% no-repeat padding-box;
+}
+
+.site-nav__link:hover {
+    color: #b3b3b3;
 }

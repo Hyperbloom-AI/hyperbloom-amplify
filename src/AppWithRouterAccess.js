@@ -9,7 +9,7 @@ const AppWithRouterAccess = () => {
   <>
     <header className="site-header">
         <div className="inner-header">
-          <div className="full-logo">
+          <div className="full-logo link">
             <img src="img/logo.png" className="nav-logo" />
             <div className="logo-text">
               <h1 className="nav-title">HYPERBLOOM A.I.</h1>
@@ -17,11 +17,11 @@ const AppWithRouterAccess = () => {
             </div>
           </div>
           <nav className="site-nav">
-            <a className="site-nav__link">About Us</a>
-            <a className="site-nav__link">Services</a>
-            <a className="site-nav__link">People</a>
-            <a className="site-nav__link">Blog</a>
-            <a className="site-nav__link">Contact</a>
+            <a className="site-nav__link link">About Us</a>
+            <a className="site-nav__link link">Services</a>
+            <a className="site-nav__link link">People</a>
+            <a className="site-nav__link link">Blog</a>
+            <a className="site-nav__link link">Contact</a>
           </nav>
         </div>
     </header>

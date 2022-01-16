@@ -1,6 +1,21 @@
 import React from 'react';
+import tempPostData from './data/tempPostData.js'
+
 
 function LandingPage() {
+    const unsortedPosts = tempPostData
+    const sortedPosts = unsortedPosts.sort(function(a,b) {
+      // Turn your strings into dates, and then subtract them
+      // to get a value that is either negative, positive, or zero.
+      return new Date(b.date) - new Date(a.date);
+    });
+
+    const featuredPost = sortedPosts[0]
+    const nextPosts = [sortedPosts[1], sortedPosts[2], sortedPosts[3]]
+
+
+
+    console.log(nextPosts)
 
     return (
         <>
@@ -15,7 +30,7 @@ function LandingPage() {
                   <div className="splash-title-content__wrapper">
                     <h1 className="splash-title">Creative Cloud Computing</h1>
                     <h2 className="splash-subtitle">Building data driven systems that improve the human experience.</h2>
-                    <button className="btn type-1">Learn About Us!</button>
+                    <button className="btn type-1 link">Learn About Us!</button>
                   </div>
                 </aside>
                 <div className="splash-hero__wrapper">
@@ -46,13 +61,14 @@ function LandingPage() {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                  <button className="btn type-1 centered">Read More.</button>
+                  <button className="btn type-1 centered link">Read More.</button>
                 </div>
                 <div className="services-right">
                   <img src="img/services-hero.png" className="services-hero"/>
                 </div>
               </div>
-              <div className="people__wrapper">
+              </section>
+              <section className="people__wrapper">
                 <h2>Hyperfounders</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                 <div className="promoted-people__wrapper">
@@ -61,9 +77,31 @@ function LandingPage() {
                   <img className="promoted_person" src="img/cmcn.jpg"/>
                 </div>
                 <p className="margin-ye">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                <button className="btn type-1 centered">Join the Team!</button>
-              </div>
-            </section>
+                <button className="btn type-1 centered link">Join the Team!</button>
+              </section>
+              <section className="blog__wrapper">
+                <h2>Check Out Our Blog.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                <div className="new-posts__wrapper">
+                  <article className="featured-post">
+                    <img src={"img/" + featuredPost.headerImage} className="featured-post__hero-image"/>
+                    <div className="featured-post__context">
+                      <h2 className="featured-post__title">{featuredPost.title}</h2>
+                    </div>
+                  </article>
+                  <div className="other-posts__wrapper">
+                  { nextPosts.map((post) => 
+                    <article key={post.date} className="featured-post__small">
+                      <img src={"img/" + post.headerImage} className="featured-post__small__hero-image"/>
+                      <div className="featured-post__small__context">
+                        <h3 className="featured-post__small__title">{post.title}</h3>
+                      </div>
+                    </article>
+                  ) }
+                  </div>
+                </div>
+                <button className="btn type-1 centered link">Read More</button>
+              </section>
           </main>
         </>
     );
