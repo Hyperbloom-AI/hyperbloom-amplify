@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none;
 }
 
-a {
+.site-header a {
     text-align: left;
     font: normal normal 300 20px/25px Open Sauce One;
     color: #FFFFFF;
@@ -102,4 +102,25 @@ section h2:not(.splash-subtitle) {
 
 .site-nav__link:hover {
     color: #b3b3b3;
+}
+
+.people__wrapper {
+    background-color: #F8F8F8;
+}
+
+.featured-post__small, .featured-post {
+    background-color: #efefef;
+}
+
+.promoted-person__context {
+    background-color: #a41860c9;
+    opacity: 0;
+}
+
+.featured-person__wrapper:hover > .promoted-person__context {
+    opacity: 1
+}
+
+.promoted-person__context p, .promoted-person__context h2 {
+    color: #ffffff
 }

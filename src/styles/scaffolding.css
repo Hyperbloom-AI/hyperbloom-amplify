@@ -9,13 +9,12 @@
         ## ID's
             ### MEDIA (Same order as above in each)
     # All font imports should be located in themes.css
+    # No colors should be located here unless the same declration contains scaffolding
 
 */
 
 /* DEV NOTE:
-
     The scaffolding will need to be updated with media queries at 1333px first
-
 */
 
 body {
@@ -81,7 +80,6 @@ h1, h2, h3, h4, h5, h6 {
 .splash-header {
     width: 100%;
     height: 65.3888888vh;
-    background: transparent linear-gradient(289deg, #2953C5 0%, #A41860 100%) 0% 0% no-repeat padding-box;
     display: flex;
     flex-flow: column;
 }
@@ -200,7 +198,6 @@ h1, h2, h3, h4, h5, h6 {
 .people__wrapper {
     margin-top: 80px;
     padding: 75px 20%;
-    background-color: #F8F8F8;
 }
 
 .promoted-person {
@@ -229,7 +226,6 @@ h1, h2, h3, h4, h5, h6 {
 .blog__wrapper {
     margin-top: 15px;
     padding: 75px 20%;
-    background-color: #FFFFFF;
 }
 
 .new-posts__wrapper {
@@ -254,7 +250,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .featured-post__small {
     border-radius: 15px;
-    background-color: #efefef;
 }
 
 .featured-post__small__hero-image {
@@ -272,11 +267,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 10px;
 }
 
-.featured-post__small__context {
-    padding: 10px 25px
-}
-
-.featured-post__context {
+.featured-post__context, .featured-post__small__context {
     padding: 10px 25px
 }
 
@@ -287,7 +278,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .featured-post {
     margin-bottom: 45px;
-    background-color: #efefef;
     border-radius: 15px;
 }
 
@@ -301,25 +291,18 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 4px;
     left: 0;
     padding: 20px;
-    background-color: #a41860c9;
     width: 100%;
     border-radius: 0 0 15px 15px;
     opacity: 0;
 }
 
-.featured-person__wrapper:hover > .promoted-person__context {
-    opacity: 1
-}
-
 .promoted-person__context p {
     text-align: left;
-    color: white;
     margin: 0;
 }
 
 .promoted-person__context h2 {
     text-align: left !important;
-    color: white;
     margin-bottom: 0;
     font-size: 30px;
 }
