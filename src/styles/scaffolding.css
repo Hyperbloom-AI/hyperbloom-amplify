@@ -12,6 +12,12 @@
 
 */
 
+/* DEV NOTE:
+
+    The scaffolding will need to be updated with media queries at 1333px first
+
+*/
+
 body {
     margin: 0;
     overflow-x: hidden;
