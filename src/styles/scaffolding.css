@@ -197,10 +197,17 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #F8F8F8;
 }
 
-.promoted_person {
-    border-radius: 5%;
-    max-width: 32%;
+.promoted-person {
+    border-radius: 15px;
+    object-fit: contain;
+    max-width: 100%;
 }
+
+.featured-person__wrapper {
+    max-width: 32%;
+    position: relative;
+}
+
 
 .promoted-people__wrapper {
     display: flex;
@@ -281,4 +288,32 @@ h1, h2, h3, h4, h5, h6 {
 .featured-post h2 {
     font-size: 39px;
     text-align: left !important;
+}
+
+.promoted-person__context {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    padding: 20px;
+    background-color: #a41860c9;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    opacity: 0;
+}
+
+.featured-person__wrapper:hover > .promoted-person__context {
+    opacity: 1
+}
+
+.promoted-person__context p {
+    text-align: left;
+    color: white;
+    margin: 0;
+}
+
+.promoted-person__context h2 {
+    text-align: left !important;
+    color: white;
+    margin-bottom: 0;
+    font-size: 30px;
 }

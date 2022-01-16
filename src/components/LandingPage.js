@@ -1,5 +1,6 @@
 import React from 'react';
 import tempPostData from './data/tempPostData.js'
+import tempPeopleData from './data/tempPeopleData.js'
 
 
 function LandingPage() {
@@ -12,6 +13,9 @@ function LandingPage() {
 
     const featuredPost = sortedPosts[0]
     const nextPosts = [sortedPosts[1], sortedPosts[2], sortedPosts[3]]
+
+    const people = tempPeopleData;
+    const featuredPeople = tempPeopleData.filter(person => person.featured);
 
 
 
@@ -69,12 +73,18 @@ function LandingPage() {
               </div>
               </section>
               <section className="people__wrapper">
-                <h2>Hyperfounders</h2>
+                <h2>Featured People</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                 <div className="promoted-people__wrapper">
-                  <img className="promoted_person" src="img/cmcn.jpg"/>
-                  <img className="promoted_person" src="img/cmcn.jpg"/>
-                  <img className="promoted_person" src="img/cmcn.jpg"/>
+                  { featuredPeople.map((person) => 
+                      <div key={person.key} className="featured-person__wrapper link">
+                        <img className="promoted-person" src={"img/" + person.image}/>
+                        <div className="promoted-person__context">
+                          <h2 className="promoted-person__name">{person.name}</h2>
+                          <p className="promoted-person__title">{person.title}</p>
+                        </div>
+                      </div>
+                    ) }
                 </div>
                 <p className="margin-ye">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                 <button className="btn type-1 centered link">Join the Team!</button>
