@@ -7,7 +7,7 @@ function App() {
       
 
       return (
-        <div className="App" data-theme="light">
+        <div className="App">
           <Router>
               <AppWithRouterAccess/>
           </Router>

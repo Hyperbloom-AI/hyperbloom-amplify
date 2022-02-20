@@ -5,6 +5,21 @@ import About from './components/About.js';
 
 const AppWithRouterAccess = () => {
 
+  // Put false on site completion. This enables an "Under Maintenance" type of screen.
+  const dev = true
+  // Set to false to see site content
+  const showUC = true
+
+  if(showUC && dev) {
+    return (
+      <>
+        <Routes>
+          <Route path="/" exact element={<LandingPage dev={dev} showUC={showUC}/>}/>
+        </Routes>
+      </>
+    )
+  }
+
   return (
   <>
     <header className="site-header">
@@ -26,7 +41,7 @@ const AppWithRouterAccess = () => {
         </div>
     </header>
     <Routes>
-      <Route path="/" exact element={<LandingPage />}/>
+      <Route path="/" exact element={<LandingPage dev={dev} showUC={showUC}/>}/>
       <Route path="/about" component={About} />
     </Routes>
     <footer className="site-footer">
@@ -39,7 +54,7 @@ const AppWithRouterAccess = () => {
       <div className="col-3">
 
       </div>
-    </footer>
+  </footer>
   </>
   )
 }

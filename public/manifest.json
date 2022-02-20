@@ -1,9 +1,9 @@
 {
-	"short_name": "HyperRehab",
-	"name": "Patient Level Data, Read, then Understood",
+	"short_name": "hyperbloom",
+	"name": "hyperbloom",
 	"icons": [
 		{
-			"src": "Datajoy-logos_black.png",
+			"src": "logo_type-2.png",
 			"type": "image/png"
 		}
 	],

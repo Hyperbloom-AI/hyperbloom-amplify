@@ -1,26 +1,82 @@
 import React from 'react';
 import tempPostData from './data/tempPostData.js'
 import tempPeopleData from './data/tempPeopleData.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faFacebookF, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { isMobile } from 'react-device-detect';
 
 
-function LandingPage() {
-    const unsortedPosts = tempPostData
-    const sortedPosts = unsortedPosts.sort(function(a,b) {
-      // Turn your strings into dates, and then subtract them
-      // to get a value that is either negative, positive, or zero.
-      return new Date(b.date) - new Date(a.date);
-    });
 
-    const featuredPost = sortedPosts[0]
-    const nextPosts = [sortedPosts[1], sortedPosts[2], sortedPosts[3]]
 
-    const people = tempPeopleData;
-    const featuredPeople = tempPeopleData.filter(person => person.featured);
+function LandingPage({dev, showUC}) {
 
+  const [infoExpanded, setInfoExpanded] = React.useState(false)
+
+  const unsortedPosts = tempPostData
+  const sortedPosts = unsortedPosts.sort(function(a,b) {
+    // Turn your strings into dates, and then subtract them
+    // to get a value that is either negative, positive, or zero.
+    return new Date(b.date) - new Date(a.date);
+  });
+
+  const featuredPost = sortedPosts[0]
+  const nextPosts = [sortedPosts[1], sortedPosts[2], sortedPosts[3]]
+
+  const people = tempPeopleData;
+  const featuredPeople = tempPeopleData.filter(person => person.featured);
+
+  function dayToNight(e) {
+    e.preventDefault()
+    setInfoExpanded(!infoExpanded)
+  }
 
 
     console.log(nextPosts)
 
+    if(showUC && dev) {
+      return(
+        <>
+          <main data-theme={infoExpanded ? "light" : "dark"} onClick={(e) => dayToNight(e)}>
+            <div className='central-content__wrapper'>
+              <img className='site-logo' src={infoExpanded ? "img/hyperbloom-banner_black_on_white_small.png" : "img/hyperbloom-banner_white_on_black_small.png"}/>
+              <p className="site-description">Hyperbloom is a software engineering collective that builds data-driven systems to improve the human experience.</p>
+            </div>
+            <p className={infoExpanded ? "dont-display prompter" : "display prompter"}>{`${isMobile ? "Tap" : "Click"} anywhere for more info`}</p>
+            <div className="expanded-content">
+              <h2>What we do:</h2>
+              <p>While we work throughout the tech sphere doing everything from full-stack development to robotics process automation, we specialize in a few key areas:</p>
+              <div className='key-area'>
+                <h2 className="key-area_heading">Data Engineering</h2>
+                <p>We specialize in building data lakes. This includes data movement, storage, processing, management, and operations.</p>
+              </div>
+              <div className='key-area'>
+                <h2 className="key-area_heading">Machine Learning</h2>
+                <p>We specialize in MLOps, like model deployment and management. We also provide common machine learning solutions around personalization, forecasting, and optimization.</p>
+              </div>
+              <div className='key-area'>
+                <h2 className="key-area_heading">Natural Language Processing</h2>
+                <p>We specialize in conversational agents and their knowledge-bases, with a further specialization in graph databases. We also provide common natural language processing solutions around language generation and understanding.</p>
+              </div>
+            </div>
+            <div className='social__wrapper'>
+              <a href="https://github.com/Hyperbloom-AI" target="_blank">
+                <FontAwesomeIcon icon={faGithub} size="2x" /> 
+              </a>
+              <a href="https://www.linkedin.com/company/75001552" target="_blank">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
+              <a href="https://twitter.com/hyperbloomAI" target="_blank">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
+              <a href="mailto:team@hyperbloom.ai" target="_blank">
+                <FontAwesomeIcon icon={faEnvelope} size="2x" />
+              </a>
+            </div>
+          </main>
+        </>
+      )  
+    }
     return (
         <>
           <main>

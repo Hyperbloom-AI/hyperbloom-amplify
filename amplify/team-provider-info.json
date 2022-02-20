@@ -10,6 +10,14 @@
       "StackName": "amplify-hyperbloomamplify-dev-150155",
       "StackId": "arn:aws:cloudformation:us-east-2:620700586481:stack/amplify-hyperbloomamplify-dev-150155/e21e29b0-4b05-11ec-8900-0ad3312a4260",
       "AmplifyAppId": "d2fxcn6tza1bq0"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2fxcn6tza1bq0",
+          "type": "manual"
+        }
+      }
     }
   }
 }
