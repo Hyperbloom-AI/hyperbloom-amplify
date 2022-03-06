@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;900&display=swap');
+
+* {
+    transition-duration: 500ms;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.App {
+    --base-text: #4F3B6D;
+    --base-heading: #A41860;
+    --display-heading: #FFF696;
+    --display-subheading: #FFFFFF;
+    --base-gradient: linear-gradient(289deg, #2953C5 0%, #A41860 100%);
+    --base-background: #FFFFFF;
+}
+
+[data-theme="dark"].App {
+    --base-text: #4F3B6D;
+    --base-heading: #A41860;
+    --display-heading: #FFF696;
+    --display-subheading: #FFFFF0;
+    --base-gradient: linear-gradient(289deg, #2953C5 0%, #A41860 100%);
+    --base-background: #FFFFFF;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    text-decoration: none;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+div.App {
+    color: var(--base-text);
+    background-color: var(--base-background);
+}
+
+header h1, header h2 {
+    font: normal normal 600 21px/22px 'Archivo', sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: normal normal 900 40px/43px 'Archivo', sans-serif;
+    color: var(--base-heading);
+    text-transform: uppercase;
+}
+
+.splash-header h1 {
+    font: normal normal 900 60px/66px Archivo;
+    text-transform: uppercase;
+    color: var(--display-heading)
+}
+
+.splash-header h2 {
+    font: normal normal 600 30px/40px Archivo;
+    color: var(--display-subheading);
+    text-transform: none;
+}
+
+.site-header a {
+    text-align: left;
+    font: normal normal 300 20px/25px Open Sauce One;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+section p, article p {
+    text-align: center;
+    font: normal normal 300 20px/25px Open Sauce One;
+    letter-spacing: 0px;
+    color: var(--base-text)
+}
+
+.large-p {
+    font: normal normal normal 25px/37px Open Sauce One;
+}
+
+section h2:not(.splash-subtitle) {
+    text-align: center;
+}
+
+.site-header {
+    box-shadow: 0px 3px 6px #00000029;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(20,20,20,.55);
+}
+
+.splash-header {
+    background: transparent var(--base-gradient) 0% 0% no-repeat padding-box;
+}
+
+.site-footer {
+    background: #4F3B6D 0% 0% no-repeat padding-box;
+}
+
+.site-nav__link:hover {
+    color: #b3b3b3;
+}
+
+.people__wrapper {
+    background-color: #F8F8F8;
+}
+
+.featured-post__small, .featured-post {
+    background-color: #efefef;
+}
+
+.promoted-person__context {
+    background-color: #a41860c9;
+    opacity: 0;
+}
+
+.featured-person__wrapper:hover > .promoted-person__context {
+    opacity: 1
+}
+
+.promoted-person__context p, .promoted-person__context h2 {
+    color: #ffffff
+}

@@ -1,0 +1,32 @@
+/* buttons */
+
+.link {
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+}
+
+.btn.type-1 {
+    color: #fff;
+    background: #F79631 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+    width: 220px;
+    height: 53px;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    font: normal normal 300 20px/30px Open Sauce One;
+    transition-duration: 500ms;
+}
+
+.btn.type-1:hover {
+    background-color: #b97429;
+}
+
+.btn.centered {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
