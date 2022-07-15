@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 //import './styles/scaffolding.css';
 //import './styles/theme.css';
 import './styles/temp.css';
+import './styles/sidebar.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFacebookF, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { isMobile } from 'react-device-detect';
-
+import SideBar from './SideBar.js'
 
 
 
@@ -37,6 +37,10 @@ function LandingPage({dev, showUC}) {
     if(showUC && dev) {
       return(
         <>
+          <div>
+            <SideBar>
+            </SideBar>
+          </div>
           <main data-theme={infoExpanded ? "light" : "dark"} onClick={(e) => dayToNight(e)}>
             <div className='central-content__wrapper'>
               <img className='site-logo' src={infoExpanded ? "img/hyperbloom-banner_black_on_white_small.png" : "img/hyperbloom-banner_white_on_black_small.png"}/>
@@ -77,7 +81,7 @@ function LandingPage({dev, showUC}) {
         </>
       )  
     }
-    return (
+    /*return (
         <>
           <main>
             <section className="splash-header">
@@ -170,7 +174,7 @@ function LandingPage({dev, showUC}) {
               </section>
           </main>
         </>
-    );
+    );*/
 }
 
 
