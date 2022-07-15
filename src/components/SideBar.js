@@ -57,7 +57,7 @@ const SideBar = () => {
                             <span className="tooltip">A scope into where we plan to be in the future, and how we plan to get there. </span>
                         </li> 
                         <li>
-                            <a href="/contact/us">
+                            <a href="/contactUs">
                                 <i class='bx bx-network-chart'></i>
                                 <span className="linkName">Contact Us</span>
                             </a>
