@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import tempPostData from './data/tempPostData.js'
 import tempPeopleData from './data/tempPeopleData.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,6 +6,7 @@ import { faGithub, faFacebookF, faLinkedin, faTwitter } from "@fortawesome/free-
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { isMobile } from 'react-device-detect';
 import SideBar from './SideBar.js'
+import NavBar from './NavBar.js'
 
 
 
@@ -38,8 +39,8 @@ function LandingPage({dev, showUC}) {
       return(
         <>
           <div>
-            <SideBar>
-            </SideBar>
+            <NavBar>
+            </NavBar>
           </div>
           <main data-theme={infoExpanded ? "light" : "dark"} onClick={(e) => dayToNight(e)}>
             <div className='central-content__wrapper'>

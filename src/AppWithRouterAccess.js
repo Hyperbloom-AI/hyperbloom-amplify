@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes, Link} from 'react-router-dom';
 import LandingPage from './components/LandingPage.js';
 import About from './components/About.js';
-
+import SideBar from './components/SideBar.js';
 
 
 const AppWithRouterAccess = () => {

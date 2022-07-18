@@ -1,12 +1,60 @@
-import { link } from 'react-router-dom';
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
 
+const NavBar = () => {
+    return (
+    <>
+        <section className="nav">
+            <meta charset='utf-8'></meta>
+            <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'></meta>
+            <link rel="stylesheet" href="sidebar.css"/>
+            <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'></link>
+            <a href="/" className="site-name"><img className='logo' src={"img/hyperbloom-banner_black_on_white_small.png"}/></a>
+            <div>
+                <ul>
+                    <li>
+                        <a href="/consultants"><span>Meet Our Consultants</span>
+                            <i class='bx bx-building'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/services"><span>Our Purpose</span>
+                            <i class='bx bx-fingerprint'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/stories"><span>Who We Serve</span>
+                            <i class='bx bx-shape-polygon'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/demos"><span>What Do We Do</span>
+                            <i class='bx bx-network-chart'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/mission"><span>Why Work With Us</span>
+                            <i class='bx bx-group'></i>
+                        </a>
+                    </li>
+                    <li>
+                        
+                        <a href="/constactUs"><span>Contact Us</span>
+                            <i class='bx bx-message-rounded-detail'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </>)
+}
 
-const SideBar = () => {
-    const [show, setShow] = useState(true)
-        return(
-            show?<section>
+export default NavBar;
+/*
+const NavBar = () => {
+
+    return(
+
+            <section>
                 <meta charset='utf-8'></meta>
                 <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'></meta>
                 <link rel="stylesheet" href="sidebar.css"/>
@@ -73,8 +121,9 @@ const SideBar = () => {
                         </li>  
                     </ul>
                 </div>
-            </section>:null
+            </section>
     )
 }
 
-export default SideBar;
+export default NavBar;
+*/

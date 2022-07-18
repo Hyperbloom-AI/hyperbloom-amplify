@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 //import './styles/theme.css';
 import './styles/temp.css';
 import './styles/sidebar.css';
+import './styles/navbar.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
