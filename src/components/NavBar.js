@@ -1,10 +1,11 @@
 import React from "react";
+import { Link, link } from "react-router-dom";
 
 const NavBar = () => {
     return (
     <>
         <section className="nav">
-            <meta charset='utf-8'></meta>
+            <meta charSet='utf-8'></meta>
             <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'></meta>
             <link rel="stylesheet" href="sidebar.css"/>
             <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'></link>
@@ -12,40 +13,39 @@ const NavBar = () => {
             <div>
                 <ul>
                     <li>
-                        <a href="/consultants"><span>Meet Our Consultants</span>
-                            <i class='bx bx-building'></i>
-                        </a>
+                        <Link to="/Consultants"><span>Meet Our Consultants</span>
+                            <i className='bx bx-building'></i>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/services"><span>Our Purpose</span>
-                            <i class='bx bx-fingerprint'></i>
-                        </a>
+                        <Link to="/OurPurpose"><span>Our Purpose</span>
+                            <i className='bx bx-fingerprint'></i>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/stories"><span>Who We Serve</span>
-                            <i class='bx bx-shape-polygon'></i>
-                        </a>
+                        <Link to="/WhoWeServe"><span>Who We Serve</span>
+                            <i className='bx bx-shape-polygon'></i>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/demos"><span>What Do We Do</span>
-                            <i class='bx bx-network-chart'></i>
-                        </a>
+                        <Link to="/WhatDoWeDo"><span>What Do We Do</span>
+                            <i className='bx bx-network-chart'></i>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/mission"><span>Why Work With Us</span>
-                            <i class='bx bx-group'></i>
-                        </a>
+                        <Link to="/WhyWorkWithUs"><span>Why Work With Us</span>
+                            <i className='bx bx-group'></i>
+                        </Link>
                     </li>
-                    <li>
-                        
-                        <a href="/constactUs"><span>Contact Us</span>
-                            <i class='bx bx-message-rounded-detail'></i>
-                        </a>
+                    <li> 
+                        <Link to="/ContactUs"><span>Contact Us</span>
+                            <i className='bx bx-message-rounded-detail'></i>
+                        </Link>
                     </li>
                 </ul>
             </div>
         </section>
-    </>)
+    </>);
 }
 
 export default NavBar;

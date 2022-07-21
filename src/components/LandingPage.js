@@ -10,7 +10,7 @@ import NavBar from './NavBar.js'
 
 
 
-function LandingPage({dev, showUC}) {
+const LandingPage = () => {
 
   const [infoExpanded, setInfoExpanded] = React.useState(false)
 
@@ -35,14 +35,14 @@ function LandingPage({dev, showUC}) {
 
     console.log(nextPosts)
 
-    if(showUC && dev) {
+    {
       return(
         <>
           <div>
             <NavBar>
             </NavBar>
           </div>
-          <main data-theme={infoExpanded ? "light" : "dark"} onClick={(e) => dayToNight(e)}>
+          <main /*data-theme={infoExpanded ? "light" : "dark"} onClick={(e) => dayToNight(e)}*/>
             <div className='central-content__wrapper'>
               <img className='site-logo' src={infoExpanded ? "img/hyperbloom-banner_black_on_white_small.png" : "img/hyperbloom-banner_white_on_black_small.png"}/>
               <p className="site-description">Hyperbloom is a software engineering collective that builds data-driven systems to improve the human experience.</p>
@@ -82,7 +82,7 @@ function LandingPage({dev, showUC}) {
         </>
       )  
     }
-    /*return (
+  /*  return (
         <>
           <main>
             <section className="splash-header">
@@ -175,7 +175,7 @@ function LandingPage({dev, showUC}) {
               </section>
           </main>
         </>
-    );*/
+    )*/
 }
 
 

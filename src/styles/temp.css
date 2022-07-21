@@ -45,7 +45,6 @@ main[data-theme="light"] {
 .site-logo {
     width: 250px;
     margin-right: 15px;
-    user-drag: none;
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
