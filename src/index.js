@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import './styles/temp.css';
 import './styles/sidebar.css';
 import './styles/navbar.css';
+import './styles/contactus.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

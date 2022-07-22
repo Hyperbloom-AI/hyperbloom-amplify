@@ -44,7 +44,8 @@ const LandingPage = () => {
           </div>
           <main /*data-theme={infoExpanded ? "light" : "dark"} onClick={(e) => dayToNight(e)}*/>
             <div className='central-content__wrapper'>
-              <img className='site-logo' src={infoExpanded ? "img/hyperbloom-banner_black_on_white_small.png" : "img/hyperbloom-banner_white_on_black_small.png"}/>
+              <img className='site-logo' src='img/hyperbloom-banner_black_on_white_small.png'></img>
+              <img /*className='site-logo' src={infoExpanded ? "img/hyperbloom-banner_black_on_white_small.png" : "img/hyperbloom-banner_white_on_black_small.png"}*//>
               <p className="site-description">Hyperbloom is a software engineering collective that builds data-driven systems to improve the human experience.</p>
             </div>
             <p className={infoExpanded ? "dont-display prompter" : "display prompter"}>{`${isMobile ? "Tap" : "Click"} anywhere for more info`}</p>

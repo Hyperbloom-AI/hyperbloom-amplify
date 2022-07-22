@@ -10,13 +10,22 @@ function ContactUs() {
 			<div>
 				<NavBar></NavBar>
 			</div>
-			<title>
-				Hyperbloom
-			</title>
-			<body>
-				What we do knjkbv  vfgdv dfv sdvsdbves gwgbwegwegweg wg rg wrh wrh erbhr banner_black_on_white_smalls
-				br brtb rmt brbrbt brt gm trmb
-			</body>
+			<div className='page-content-container'>
+				<div className='contact-us-container'>
+					<h1 className='contact-us-header'>Contact Us</h1>
+					<body className='contact-us-body'>
+						<ul className='contact-us-ul'>
+							<li className='contact-us-li'>
+								<input className='contact-us-inputs' placeholder='Name'></input>
+							</li>
+							<li className='contact-us-li'>
+								<input className='contact-us-inputs' placeholder='username@email.com'></input>
+							</li>
+						</ul>
+						<span>Hyperbloom</span>
+					</body>
+				</div>
+			</div>
 
 		</>
 	);

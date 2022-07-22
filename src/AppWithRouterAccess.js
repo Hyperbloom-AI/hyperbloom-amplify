@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Routes, Link} from 'react-router-dom';
 import LandingPage from './components/LandingPage.js';
-import About from './components/ConsultantsPage.js';
 import SideBar from './components/SideBar.js';
 import Consultants from './components/ConsultantsPage.js';
 import OurPurpose from './components/OurPurposePage.js';
