@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import tempPostData from './data/tempPostData.js'
 import tempPeopleData from './data/tempPeopleData.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFacebookF, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { isMobile } from 'react-device-detect';
+import SideBar from './SideBar.js'
+import NavBar from './NavBar.js'
 
 
 
-
-function LandingPage({dev, showUC}) {
+const LandingPage = () => {
 
   const [infoExpanded, setInfoExpanded] = React.useState(false)
 
@@ -34,12 +35,17 @@ function LandingPage({dev, showUC}) {
 
     console.log(nextPosts)
 
-    if(showUC && dev) {
+    {
       return(
         <>
-          <main data-theme={infoExpanded ? "light" : "dark"} onClick={(e) => dayToNight(e)}>
+          <div>
+            <NavBar>
+            </NavBar>
+          </div>
+          <main /*data-theme={infoExpanded ? "light" : "dark"} onClick={(e) => dayToNight(e)}*/>
             <div className='central-content__wrapper'>
-              <img className='site-logo' src={infoExpanded ? "img/hyperbloom-banner_black_on_white_small.png" : "img/hyperbloom-banner_white_on_black_small.png"}/>
+              <img className='site-logo' src='img/hyperbloom-banner_black_on_white_small.png'></img>
+              <img /*className='site-logo' src={infoExpanded ? "img/hyperbloom-banner_black_on_white_small.png" : "img/hyperbloom-banner_white_on_black_small.png"}*//>
               <p className="site-description">Hyperbloom is a software engineering collective that builds data-driven systems to improve the human experience.</p>
             </div>
             <p className={infoExpanded ? "dont-display prompter" : "display prompter"}>{`${isMobile ? "Tap" : "Click"} anywhere for more info`}</p>
@@ -77,7 +83,7 @@ function LandingPage({dev, showUC}) {
         </>
       )  
     }
-    return (
+  /*  return (
         <>
           <main>
             <section className="splash-header">
@@ -170,7 +176,7 @@ function LandingPage({dev, showUC}) {
               </section>
           </main>
         </>
-    );
+    )*/
 }
 
 

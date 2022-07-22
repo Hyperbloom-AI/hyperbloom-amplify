@@ -1,7 +1,15 @@
 import React from 'react';
 import { Route, Routes, Link} from 'react-router-dom';
 import LandingPage from './components/LandingPage.js';
-import About from './components/About.js';
+import SideBar from './components/SideBar.js';
+import Consultants from './components/ConsultantsPage.js';
+import OurPurpose from './components/OurPurposePage.js';
+import WhoWeServe from './components/WhoWeServePage.js';
+import WhatDoWeDo from './components/WhatDoWeDoPage.js';
+import WhyWorkWithUs from './components/WhyWorkWithUsPage.js';
+import ContactUs from './components/ContactUsPage.js';
+
+
 
 const AppWithRouterAccess = () => {
 
@@ -10,17 +18,23 @@ const AppWithRouterAccess = () => {
   // Set to false to see site content
   const showUC = true
 
-  if(showUC && dev) {
+
     return (
       <>
         <Routes>
-          <Route path="/" exact element={<LandingPage dev={dev} showUC={showUC}/>}/>
+          <Route path="/" exact element={<LandingPage dev={dev} showUC={showUC}/>}></Route>
+          <Route path="/Consultants" element={<Consultants dev={dev} showUC={showUC}/>}></Route>
+          <Route path="/OurPurpose" element={<OurPurpose dev={dev} showUC={showUC}/>}></Route>
+          <Route path="/WhoWeServe" element={<WhoWeServe dev={dev} showUC={showUC}/>}></Route>
+          <Route path="/WhatDoWeDo" element={<WhatDoWeDo dev={dev} showUC={showUC}/>}></Route>
+          <Route path="/WhyWorkWithUs" element={<WhyWorkWithUs dev={dev} showUC={showUC}/>}></Route>
+          <Route path="/ContactUs" element={<ContactUs dev={dev} showUC={showUC}/>}></Route>
         </Routes>
       </>
-    )
-  }
+    );
+  
 
-  return (
+  /*return (
   <>
     <header className="site-header">
         <div className="inner-header">
@@ -56,7 +70,7 @@ const AppWithRouterAccess = () => {
       </div>
   </footer>
   </>
-  )
+  )*/
 }
 
 export default AppWithRouterAccess;
