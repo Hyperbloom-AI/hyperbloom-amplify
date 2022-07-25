@@ -42,4 +42,14 @@
 .contact-us-li {
         position: relative;
         padding-left: 11px;
+        margin: 10px;
 }
+.logo-adjust {
+    width: 250px;
+    margin: 10px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    }
