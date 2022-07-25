@@ -1,11 +1,18 @@
+
+
 .page-content-container {
+    margin-top: 100px;
     padding: 50px;
+    background-color: #303030;
 }
 
 .contact-us-container {
-    padding: 20px;
+    padding: 30px;
+    margin:20px 300px;
     background-color: #303030;
     border-radius: 12px;
+    outline-style:auto;
+    outline-color: white;
 }
 
 .contact-us-header {
@@ -33,16 +40,16 @@
 }
 
 .contact-us-ul {
-        font-size: 13px;
-        list-style: none;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding-left: 0;
+    font-size: 13px;
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 0;
     }
 .contact-us-li {
-        position: relative;
-        padding-left: 11px;
-        margin: 10px;
+    position: relative;
+    padding-left: 10px;
+    margin: 10px;
 }
 .logo-adjust {
     width: 250px;
