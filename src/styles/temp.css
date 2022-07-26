@@ -115,7 +115,9 @@ main[data-theme="light"] p {
 }
 
 .social__wrapper svg:hover {
-    color: #72fcfc7b
+    color: #f49b2d;
+    opacity: .5;
+    
 }
 
 .social__wrapper {

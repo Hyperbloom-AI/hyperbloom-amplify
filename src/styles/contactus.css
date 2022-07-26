@@ -3,23 +3,23 @@
 .page-content-container {
     margin-top: 100px;
     padding: 50px;
-    background-color: #303030;
+    background-color: #eeeeee;
 }
 
 .contact-us-container {
     padding: 30px;
     margin:20px 300px;
-    background-color: #303030;
+    background-color: #eeeeee;
     border-radius: 12px;
     outline-style:auto;
-    outline-color: white;
+    outline-color: #303030;
 }
 
 .contact-us-header {
     padding-top: 10px;
     padding-bottom: 30px;
     text-align: center;
-    color: white;
+    color: #303030;
 }
 
 .contact-us-body {

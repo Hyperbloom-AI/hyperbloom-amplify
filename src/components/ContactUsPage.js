@@ -36,7 +36,7 @@ function ContactUs() {
 								<textarea className='contact-us-inputs' placeholder='Email Message Here' value={Message} onChange={(e) => setMessage(e.target.value)}></textarea>
 							</li>
 						</ul>
-						<img className='logo-adjust' src='img/hyperbloom-banner_white_on_black_small.png'></img>
+						<img className='logo-adjust' src='img/hyperbloom-banner_black_on_white_small.png'></img>
 					</body>
 				</div>
 			</div>

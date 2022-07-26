@@ -15,10 +15,11 @@ function Consultants() {
 			<div className='page-content-container'>
 				<div className='consultant-page-container'>
 					<body className='consultant-body'>
+						<h1 className='title'>Hyperbloom's Consultants</h1>
 						<ul className='consultant-ul'>
 							<li className='consultant-li'>
 								<section className='consultant-images'>
-									<img className='site-logo' src='img/hyperbloom-banner_black_on_white_small.png'></img>
+									<img className='logo-adjust' src='img/hyperbloom-banner_black_on_white_small.png'></img>
 								</section>
 								<section className='consultant-name'>
 									<span>Paul Prae</span>
