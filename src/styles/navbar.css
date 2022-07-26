@@ -9,13 +9,16 @@ body {
 }
 
 .nav {
-    background-color:  white;
+    width: 100%;
+    background-color:  hsl(0, 0%, 85%);
     color: #72fcfc;
     display: flex; 
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
     padding: 0 1rem;
+    position: absolute;
+    z-index: 100;
 }
 
 .site-name {
@@ -44,7 +47,7 @@ body {
 }
 
 .nav li a {
-    color: #7c2ae8;
+    color: #303030;
     text-decoration: none;
     height: 100%;
     min-width: 50px;
@@ -57,8 +60,8 @@ body {
 }
 
  .nav li a:hover {
-    color: #303030;
-    background-color: whitesmoke;
+    color: #d74f4d;
+    background-color: rgb(239, 239, 239);
     transition: all 0.5s ease;
     opacity: 1;
     top: 50%;
