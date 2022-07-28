@@ -8,6 +8,7 @@ import './styles/sidebar.css';
 import './styles/navbar.css';
 import './styles/contactus.css';
 import './styles/consultants.css';
+import './styles/ourpurpose.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

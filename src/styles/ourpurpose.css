@@ -1,0 +1,26 @@
+.content-container {
+    padding: 20px;
+    margin:20px 150px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    outline-style:auto;
+    outline-color: #303030;
+}
+
+.our-purpose-p {
+    text-indent: calc(10px);
+    color:#303030;
+    padding: 30px 50px;
+    font-size: 18px;
+}
+
+.our-purpose-ul {
+    padding: 20px 100px;
+    list-style: inside;
+
+}
+
+.our-purpose-li {
+    padding: 10px;
+}
+
