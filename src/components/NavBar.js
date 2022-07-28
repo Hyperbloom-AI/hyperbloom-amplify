@@ -28,7 +28,7 @@ const NavBar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/WhatDoWeDo"><span>What Do We Do</span>
+                        <Link to="/WhatDoWeDo"><span>What We Can Do</span>
                             <i className='bx bx-network-chart'></i>
                         </Link>
                     </li>
