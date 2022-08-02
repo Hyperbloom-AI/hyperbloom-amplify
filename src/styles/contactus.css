@@ -1,18 +1,25 @@
+
+
 .page-content-container {
+    margin-top: 100px;
     padding: 50px;
+    background-color: #eeeeee;
 }
 
 .contact-us-container {
-    padding: 20px;
-    background-color: #303030;
+    padding: 30px;
+    margin:20px 300px;
+    background-color: #eeeeee;
     border-radius: 12px;
+    outline-style:auto;
+    outline-color: #303030;
 }
 
 .contact-us-header {
     padding-top: 10px;
     padding-bottom: 30px;
     text-align: center;
-    color: white;
+    color: #303030;
 }
 
 .contact-us-body {
@@ -33,13 +40,23 @@
 }
 
 .contact-us-ul {
-        font-size: 13px;
-        list-style: none;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding-left: 0;
+    font-size: 13px;
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 0;
     }
 .contact-us-li {
-        position: relative;
-        padding-left: 11px;
+    position: relative;
+    padding-left: 10px;
+    margin: 10px;
 }
+.logo-adjust {
+    width: 250px;
+    margin: 10px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    }
