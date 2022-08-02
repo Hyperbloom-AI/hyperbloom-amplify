@@ -1,8 +1,9 @@
-*{
+* {
     overflow: scroll;
 }
 
 .consultant-page-container {
+    
     margin-top:20px;
     margin-left: 150px;
     margin-right: 150px;
@@ -58,6 +59,7 @@
 
 .title {
     padding-top: 30px;
+    padding-bottom: 20px;
     text-align: center;
     color: #303030;
     font-size: 35px;

@@ -1,0 +1,52 @@
+.content-container {
+    padding: 20px;
+    margin:20px 150px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    outline-style:auto;
+    outline-color: #303030;
+}
+
+.whoweare-p {
+    text-indent: calc(45px);
+    color:#303030;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+
+.our-purpose-ul {
+    padding: 20px 100px;
+    list-style: inside;
+
+}
+
+.our-purpose-li {
+    padding: 10px;
+    font-size: 20px;
+    color: #303030;
+}
+
+.bio-ul {
+    padding: 50px;
+}
+
+.bio-li {
+    padding: 0px 55px;
+    font-size: 20px;
+    color:#303030;
+}
+
+.link-ol{
+    padding-top: 40px;
+    padding-left: 95px;
+}
+
+.link-li{
+    font-size: 20px;
+    padding-top: 20px;
+    color: #303030;
+}
+
+a {
+    text-decoration: none;
+}

@@ -4,7 +4,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 
-function WhyWorkWithUs() {
+function Solutions() {
 	return (
 		<>
 			<div>
@@ -27,4 +27,4 @@ function WhyWorkWithUs() {
 	);
 }
 
-export default WhyWorkWithUs
+export default Solutions

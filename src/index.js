@@ -7,8 +7,8 @@ import './styles/temp.css';
 import './styles/sidebar.css';
 import './styles/navbar.css';
 import './styles/contactus.css';
-import './styles/consultants.css';
-import './styles/ourpurpose.css';
+import './styles/whoweare1.css';
+import './styles/whoweare2.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

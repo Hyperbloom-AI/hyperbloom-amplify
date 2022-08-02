@@ -4,7 +4,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 
-function WhoWeServe() {
+function Services() {
 	return (
 		<>
 			<div>
@@ -27,4 +27,4 @@ function WhoWeServe() {
 	);
 }
 
-export default WhoWeServe
+export default Services

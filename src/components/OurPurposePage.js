@@ -4,7 +4,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 
-function OurPurpose() {
+function Industries() {
 	return (
 		<>
 			<div>
@@ -64,4 +64,4 @@ function OurPurpose() {
 	);
 }
 
-export default OurPurpose
+export default Industries
