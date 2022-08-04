@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 import { faGithub, faFacebookF, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { link } from 'fontawesome'
 
 function WhoWeArePage() {
 	return (
@@ -17,7 +18,7 @@ function WhoWeArePage() {
 					<body className='consultant-body'>
 					<section className='section-2'>
 						<h1 className='title'>Our Principles</h1>
-						<p className='whoweare-p'>Our company operates on principles that change over time as we learn more about ourselves and the world. *Principles guide us towards living better lives and creating better lives for others*. These principles are defined by our founding team and growing community of consultants, partners, and advisors. 
+						<p className='whoweare-p'>Our company operates on principles that change over time as we learn more about ourselves and the world. Principles guide us towards living better lives and creating better lives for others. These principles are defined by our founding team and growing community of consultants, partners, and advisors. 
 						</p>
 						<ul className='our-purpose-ul'>
 							<li className='our-purpose-li'>
@@ -56,7 +57,7 @@ function WhoWeArePage() {
 						<ul className='consultant-ul'>
 							<li className='consultant-li'>
 								<section className='consultant-images'>
-									<img className='logo-adjust' src='img/hyperbloom-banner_black_on_white_small.png'></img>
+									<img className='logo-adjust' src='PaulPrae.png'></img>
 								</section>
 								<section className='consultant-name'>
 									<span>Paul Prae</span>
@@ -200,9 +201,11 @@ function WhoWeArePage() {
 								To protect the iconic wildlife we all love, we must rebuild the web of biodiversity that supports it. We do this by rethinking how we’re using natural resources, easing the pressure, and allowing ecosystems to recover. In the process, all life benefits: plants, insects, fish, birds, mammals, and even people.
 								</p>
 								<ol type='1' className='link-ol'>
-									<li className='link-li'>
-										<a className='link-li' href="https://www.worldwildlife.org/pages/what-is-biodiversity"> https://www.worldwildlife.org/pages/what-is-biodiversity </a>
-									</li>
+									<a className='link-li' href="https://www.worldwildlife.org/pages/what-is-biodiversity"> 
+										<li className='link-li'>
+											https://www.worldwildlife.org/pages/what-is-biodiversity 
+										</li>
+									</a>
 									<li className='link-li'>
 										<a className='link-li' href="https://www.epicbiodiversity.com/wildlife-management"> https://www.epicbiodiversity.com/wildlife-management </a>
 									</li>

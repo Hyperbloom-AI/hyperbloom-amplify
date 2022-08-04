@@ -31,12 +31,16 @@
 }
 
 .bio-li {
-    padding: 0px 55px;
+    outline-style: auto;
+    outline-color: #303030;
+    padding: 20px 55px;
     font-size: 20px;
     color:#303030;
+    border-radius: 12px;
 }
 
 .link-ol{
+    list-style: inside;
     padding-top: 40px;
     padding-left: 95px;
 }
@@ -45,6 +49,7 @@
     font-size: 20px;
     padding-top: 20px;
     color: #303030;
+    line-height: 30px;
 }
 
 a {
