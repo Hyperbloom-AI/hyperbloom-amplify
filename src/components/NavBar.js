@@ -13,28 +13,28 @@ const NavBar = () => {
             <div>
                 <ul>
                     <li>
-                        <Link to="/Consultants"><span>Meet Our Consultants</span>
+                        <Link to="/WhoWeAre"><span>Who We Are</span>
                             <i className='bx bx-building'></i>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/OurPurpose"><span>Our Purpose</span>
+                        <Link to="/Industries"><span>Industries</span>
                             <i className='bx bx-fingerprint'></i>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/WhoWeServe"><span>Who We Serve</span>
+                        <Link to="/Services"><span>Services</span>
                             <i className='bx bx-shape-polygon'></i>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/WhatDoWeDo"><span>What We Can Do</span>
-                            <i className='bx bx-network-chart'></i>
+                        <Link to="/CustomerStories"><span>Customer Stories</span>
+                            <i className='bx bx-group'></i>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/WhyWorkWithUs"><span>Why Work With Us</span>
-                            <i className='bx bx-group'></i>
+                        <Link to="/Solutions"><span>Solutions</span>
+                            <i className='bx bx-network-chart'></i>
                         </Link>
                     </li>
                     <li> 
