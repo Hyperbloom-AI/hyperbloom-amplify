@@ -14,10 +14,11 @@ function WhoWeArePage() {
 				<NavBar></NavBar>
 			</div>
 			<div className='page-content-container'>
-				<div className='consultant-page-container'>
+				<h1 className='title-2'>Who We Are</h1>
+				<div className='content-container'>
 					<body className='consultant-body'>
 					<section className='section-2'>
-						<h1 className='title'>Our Principles</h1>
+						<h1 className='title-3'>Our Principles</h1>
 						<p className='whoweare-p'>Our company operates on principles that change over time as we learn more about ourselves and the world. Principles guide us towards living better lives and creating better lives for others. These principles are defined by our founding team and growing community of consultants, partners, and advisors. 
 						</p>
 						<ul className='our-purpose-ul'>
@@ -57,7 +58,7 @@ function WhoWeArePage() {
 						<ul className='consultant-ul'>
 							<li className='consultant-li'>
 								<section className='consultant-images'>
-									<img className='logo-adjust' src='PaulPrae.png'></img>
+									<img className='consultant-images-2' src='img/PaulPrae.png'></img>
 								</section>
 								<section className='consultant-name'>
 									<span>Paul Prae</span>
@@ -83,7 +84,7 @@ function WhoWeArePage() {
 
 							<li className='consultant-li'>
 								<section className='consultant-images'>
-									<img className='site-logo' src='img/hyperbloom-banner_black_on_white_small.png'></img>
+									<img className='consultant-images-2' src='img/CalebLander.png'></img>
 								</section>
 								<section className='consultant-name'>
 									<span>Caleb Lander</span>
@@ -108,7 +109,7 @@ function WhoWeArePage() {
 							</li>
 							<li className='consultant-li'>
 								<section className='consultant-images'>
-									<img className='site-logo' src='img/hyperbloom-banner_black_on_white_small.png'></img>
+									<img className='consultant-images-2' src='img/AlexEversbusch.png'></img>
 								</section>
 								<section className='consultant-name'>
 									<span>Alex Eversbusch</span>
@@ -186,9 +187,15 @@ function WhoWeArePage() {
 								<p className='whoweare-p'>
 								While Earth’s biodiversity is so rich that many species have yet to be discovered, many species are being threatened with extinction due to human activities, putting the Earth’s magnificent biodiversity at risk. 
 								</p>
+								<section className='cs-img-3'>
+									<img className='cs-img-3'src='img/treeMonkey.png'></img>
+								</section>
 								<p className='whoweare-p'>
 								All this pressure adds up to a landscape that is quickly changing, with nature struggling to keep up. For example, thirty percent of Borneo’s forests have been wiped out in only 40 years. We’ve lost half of all critically endangered Bornean orangutans in just the past 20 years. 
 								</p>
+								<section className='cs-img-3'>
+									<img className='cs-img-3'src='img/orangatangs.png'></img>
+								</section>
 								<p className='whoweare-p'>
 								But one of the most beautiful things about biodiversity is its resilience. Ease up on the pressure, manage resources well, give it time, and the ecosystem will adapt. Nature and biodiversity will recover. That’s exactly what we need to help other organizations do.
 								</p>

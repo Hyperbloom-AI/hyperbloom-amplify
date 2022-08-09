@@ -1,0 +1,219 @@
+* {
+    overflow: scroll;
+}
+
+.consultant-page-container {
+    
+    margin-top:20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    outline-style: auto;
+    outline-color: #303030;
+    padding-left: 125px;
+    padding-right: 125px;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+}
+
+.consultant-body {
+    padding: 15px;
+}
+
+.consultant-ul {
+    color: #303030;
+    font-size: 20px;
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.consultant-li {
+    padding: 40px;
+}
+
+.consultant-name {
+    padding-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    color:#303030;
+}
+
+.consultant-bios {
+    text-align: center;
+    padding: 20px;
+    color:#303030;
+}
+
+.consultant-images {
+    margin: auto;
+    padding-top: 90px;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    border-radius: 100%;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.consultant-images-2 {
+    position:relative;
+    margin-top: -90px;
+    width: 300px;
+    height: auto;
+}
+
+.title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #303030;
+    font-size: 35px;
+}
+
+.title-2 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #303030;
+    font-size: 35px;
+}
+
+.title-3 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #303030;
+    font-size: 35px;
+}
+
+.title-4 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #303030;
+    font-size: 40px;
+}
+
+.title-5 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #303030;
+    font-size: 40px;
+}
+
+
+.content-container {
+    padding: 50px;
+    margin:20px 150px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    outline-style:auto;
+    outline-color: #303030;
+}
+
+.whoweare-p {
+    text-indent: calc(45px);
+    color:#303030;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+
+.services-p {
+    color:#303030;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+
+.our-purpose-ul {
+    padding: 20px 100px;
+    list-style: inside;
+
+}
+
+.our-purpose-li {
+    padding: 10px;
+    font-size: 20px;
+    color: #303030;
+}
+
+.bio-ul {
+    padding: 25px;
+}
+
+.customer-ul {
+    margin-top: 20px;
+    padding: 10px 50px;
+}
+
+.bio-li {
+    outline-style: auto;
+    outline-color: #303030;
+    padding: 20px 55px;
+    font-size: 20px;
+    color:#303030;
+    border-radius: 12px;
+}
+
+.link-ol{
+    list-style: inside;
+    padding-top: 40px;
+    padding-left: 95px;
+}
+
+.services-ul {
+    padding-left: 95px;
+    list-style: inside;
+}
+
+.link-li{
+    font-size: 20px;
+    padding-top: 20px;
+    color: #d74f4d;
+    line-height: 30px;
+}
+
+.point-li{
+    font-size: 20px;
+    padding-top: 20px;
+    color: #303030;
+    line-height: 30px;
+}
+a {
+    text-decoration: none;
+}
+
+.cs-img {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 850px;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cs-img-2 {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 850px;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.cs-img-3 {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 850px;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}

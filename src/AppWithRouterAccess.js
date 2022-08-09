@@ -2,13 +2,13 @@ import React from 'react';
 import { Route, Routes, Link} from 'react-router-dom';
 import LandingPage from './components/LandingPage.js';
 import SideBar from './components/SideBar.js';
-import Consultants from './components/WhoWeArePage.js';
-import Services from './components/WhoWeServePage.js';
-import CustomerStories from './components/WhatCanWeDoPage.js';
-import Solutions from './components/WhyWorkWithUsPage.js';
+import Consultants from './components/WhoWeAre.js';
+import Services from './components/Services.js';
+import CustomerStories from './components/CustomerStories.js';
+import Solutions from './components/Solutions.js';
 import ContactUs from './components/ContactUsPage.js';
-import Industries from './components/OurPurposePage.js';
-import WhoWeArePage from './components/WhoWeArePage.js';
+import Industries from './components/Industries.js';
+import WhoWeArePage from './components/WhoWeAre.js';
 
 
 
