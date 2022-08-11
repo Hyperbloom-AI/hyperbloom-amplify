@@ -2,14 +2,10 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import NavBar from './NavBar'
 
 function Services() {
 	return (
 		<>
-			<div>
-				<NavBar></NavBar>
-			</div>
 			<div className='page-content-container'>
 				<h1 className='title-2'>Services</h1>
 				<div className='content-container'>
@@ -21,7 +17,7 @@ function Services() {
 					<section className='cs-img-2'>
 							<img className='cs-img-2'src='img/dataops.png'></img>
 					</section>
-					<ul className='customer-ul'>
+					<ul className='link-ul'>
 						<li className='link-li'>
 							<a className='link-li' href="https://www.datascience-pm.com/crisp-dm-2/"> https://www.epicbiodiversity.com/wildlife-management </a>
 						</li>

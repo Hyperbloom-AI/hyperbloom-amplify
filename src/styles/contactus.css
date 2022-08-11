@@ -9,7 +9,7 @@
 .contact-us-container {
     padding: 30px;
     margin:20px 300px;
-    background-color: #f0f0f0;
+    background-color: white;
     border-radius: 12px;
     outline-style:auto;
     outline-color: #303030;
@@ -35,7 +35,7 @@
     padding: 7px 2px;
     min-width: 450px;
     border: none;
-    background-color: white;
+    background-color: #f0f0f0;
     border-bottom: 1.5px solid #b9b9b9;
     transition-duration: 1s;
 }

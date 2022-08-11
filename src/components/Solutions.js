@@ -2,14 +2,11 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import NavBar from './NavBar'
+
 
 function Solutions() {
 	return (
 		<>
-			<div>
-				<NavBar></NavBar>
-			</div>
 			<div className='page-content-container'>
 				<h1 className='title-2'>Solutions</h1>
 				<div className='content-container'>
@@ -40,7 +37,7 @@ function Solutions() {
 							<li className='point-li'>Onboard data producers at scale without requiring them to maintain the entire data sharing process. This helps data producers onboard their data into the data lake and focus on collecting, processing, and storing data from their data domain.</li>
 							<li className='point-li'>Enable data consumers to access data from multiple data producers without increasing your overall costs and management overhead.</li>
 						</ul>
-						<ul className='services-ul'>
+						<ul className='link-ul'>
 							<li className='link-li'>
 								<a className='link-li' href="https://docs.aws.amazon.com/solutions/latest/data-lake-solution/architecture.html"> https://docs.aws.amazon.com/solutions/latest/data-lake-solution/architecture.html </a>
 							</li>
@@ -61,7 +58,7 @@ function Solutions() {
 							<li className='point-li'>Support interoperable standards such as the Fast Healthcare Interoperability Resources (FHIR) format.</li>
 							<li className='point-li'>Create a complete and chronological view of patient health data, including prescriptions, procedures, and diagnoses.</li>
 						</ul>
-						<ul className='services-ul'>
+						<ul className='link-ul'>
 							<li className='link-li'>
 								<a className='link-li' href="https://aws.amazon.com/healthlake/">https://aws.amazon.com/healthlake/</a>
 							</li>
@@ -96,7 +93,7 @@ function Solutions() {
 						<section className='cs-img-2'>
 							<img className='cs-img-2'src='img/datalakehouse2.png'></img>
 						</section>
-						<ul className='services-ul'>
+						<ul className='link-ul'>
 							<li className='link-li'>
 								<a className='link-li' href="https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/">https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/</a>
 							</li>
@@ -114,7 +111,7 @@ function Solutions() {
 						<p className='whoweare-p'>
 							There are two primary systems that compose the agent. The first is a knowledge system composed of subsystems that acquire, store, and retrieve knowledge. The second is the conversational system that allows the agent to interact with people and reason over its knowledge. There are two technologies that these systems share that allowed the agent to remain cohesive: Microsoft Azure, an “open, flexible, enterprise-grade cloud computing platform”, and Node.js, an “event-driven I/O server-side JavaScript environment”. These were chosen because of the potential of the Microsoft Bot Framework, which was the cornerstone of this architecture.
 						</p>
-						<ul className='services-ul'>
+						<ul className='link-ul'>
 							<li className='link-li'>
 								<a className='link-li' href="https://www.neona.chat">https://www.neona.chat</a>
 							</li>
@@ -123,7 +120,7 @@ function Solutions() {
 						<p className='whoweare-p'>
 							Using real-world data from www.healthdata.gov, we built and demonstrated an experiment that predicts the outcomes of patients who went through substance abuse treatment.
 						</p>
-						<ul className='services-ul'>
+						<ul className='link-ul'>
 							<li className='link-li'>
 								<a className='link-li' href="https://www.paulprae.com/predicting-the-future-with-azure-machine-learning/">https://www.paulprae.com/predicting-the-future-with-azure-machine-learning/</a>
 							</li>

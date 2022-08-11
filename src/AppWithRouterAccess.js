@@ -1,14 +1,13 @@
 import React from 'react';
 import { Route, Routes, Link} from 'react-router-dom';
 import LandingPage from './components/LandingPage.js';
-import SideBar from './components/SideBar.js';
-import Consultants from './components/WhoWeAre.js';
 import Services from './components/Services.js';
 import CustomerStories from './components/CustomerStories.js';
 import Solutions from './components/Solutions.js';
 import ContactUs from './components/ContactUsPage.js';
 import Industries from './components/Industries.js';
 import WhoWeArePage from './components/WhoWeAre.js';
+import Layout from './Layout.js';
 
 
 
@@ -23,13 +22,16 @@ const AppWithRouterAccess = () => {
     return (
       <>
         <Routes>
-          <Route path="/" exact element={<LandingPage dev={dev} showUC={showUC}/>}></Route>
-          <Route path="/WhoWeAre" element={<WhoWeArePage dev={dev} showUC={showUC}/>}></Route>
-          <Route path="/Industries" element={<Industries dev={dev} showUC={showUC}/>}></Route>
-          <Route path="/Services" element={<Services dev={dev} showUC={showUC}/>}></Route>
-          <Route path="/CustomerStories" element={<CustomerStories dev={dev} showUC={showUC}/>}></Route>
-          <Route path="/Solutions" element={<Solutions dev={dev} showUC={showUC}/>}></Route>
-          <Route path="/ContactUs" element={<ContactUs dev={dev} showUC={showUC}/>}></Route>
+          <Route path="/" element={<Layout />}>
+            <Route path="/" exact element={<LandingPage dev={dev} showUC={showUC}/>}></Route>
+            <Route path="/WhoWeAre" element={<WhoWeArePage dev={dev} showUC={showUC}/>}></Route>
+            <Route path="/Industries" element={<Industries dev={dev} showUC={showUC}/>}></Route>
+            <Route path="/Services" element={<Services dev={dev} showUC={showUC}/>}></Route>
+            <Route path="/CustomerStories" element={<CustomerStories dev={dev} showUC={showUC}/>}></Route>
+            <Route path="/Solutions" element={<Solutions dev={dev} showUC={showUC}/>}></Route>
+            <Route path="/ContactUs" element={<ContactUs dev={dev} showUC={showUC}/>}></Route>
+            <Route path="*" element={<LandingPage />} />
+          </Route>
         </Routes>
       </>
     );

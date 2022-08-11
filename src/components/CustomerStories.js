@@ -2,14 +2,11 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import NavBar from './NavBar'
+
 
 function CustomerStories() {
 	return (
 		<>
-			<div>
-				<NavBar></NavBar>
-			</div>
 			<div className='page-content-container'>
 				<h1 className='title-2'>Customer Stories</h1>
 				<div className='content-container'>
