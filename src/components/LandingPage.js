@@ -38,10 +38,7 @@ const LandingPage = () => {
     {
       return(
         <>
-          <div>
-            <NavBar>
-            </NavBar>
-          </div>
+        <section className='page-content-container'>
           <main /*data-theme={infoExpanded ? "light" : "dark"} onClick={(e) => dayToNight(e)}*/>
             <div className='central-content__wrapper'>
               <img className='site-logo' src='img/hyperbloom-banner_black_on_white_small.png'></img>
@@ -80,6 +77,7 @@ const LandingPage = () => {
               </a>
             </div>
           </main>
+        </section>
         </>
       )  
     }

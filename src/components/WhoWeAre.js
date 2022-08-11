@@ -2,17 +2,14 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import NavBar from './NavBar'
 import { faGithub, faFacebookF, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { link } from 'fontawesome'
+import ScrollToTop from './ScrollToTop'
 
 function WhoWeArePage() {
 	return (
 		<>
-			<div>
-				<NavBar></NavBar>
-			</div>
 			<div className='page-content-container'>
 				<h1 className='title-2'>Who We Are</h1>
 				<div className='content-container'>
@@ -134,7 +131,7 @@ function WhoWeArePage() {
 							</li>
 							<li className='consultant-li'>
 								<section className='consultant-images'>
-									<img className='site-logo' src='img/hyperbloom-banner_black_on_white_small.png'></img>
+									<img className='consultant-images-2' src='img/PaulPrae.png'></img>
 								</section>
 								<section className='consultant-name'>
 									<span>Paul Prae</span>
@@ -207,7 +204,7 @@ function WhoWeArePage() {
 								<p className='whoweare-p'>
 								To protect the iconic wildlife we all love, we must rebuild the web of biodiversity that supports it. We do this by rethinking how we’re using natural resources, easing the pressure, and allowing ecosystems to recover. In the process, all life benefits: plants, insects, fish, birds, mammals, and even people.
 								</p>
-								<ol type='1' className='link-ol'>
+								<ul className='link-ul'>
 									<a className='link-li' href="https://www.worldwildlife.org/pages/what-is-biodiversity"> 
 										<li className='link-li'>
 											https://www.worldwildlife.org/pages/what-is-biodiversity 
@@ -228,7 +225,7 @@ function WhoWeArePage() {
 									<li className='link-li'>
 										<a className='link-li' href="https://www.amnh.org/research/center-for-biodiversity-conservation/what-is-biodiversity"> https://www.amnh.org/research/center-for-biodiversity-conservation/what-is-biodiversity </a>
 									</li>
-								</ol>
+								</ul>
 							</section>
 						</div>	
 					</body>

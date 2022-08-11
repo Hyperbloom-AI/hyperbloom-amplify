@@ -1,5 +1,5 @@
 * {
-    overflow: scroll;
+    overflow: auto;
 }
 
 .consultant-page-container {
@@ -13,6 +13,15 @@
     padding-right: 125px;
     border-radius: 12px;
     background-color: #f0f0f0;
+}
+
+.content-container {
+    padding: 50px;
+    margin:20px 150px;
+    background-color: white;
+    border-radius: 12px;
+    outline-style:auto;
+    outline-color: #303030;
 }
 
 .consultant-body {
@@ -55,6 +64,7 @@
     height: 300px;
     object-fit: cover;
     overflow: hidden;
+    background-color: #303030;
 }
 
 .consultant-images-2 {
@@ -104,16 +114,6 @@
     font-size: 40px;
 }
 
-
-.content-container {
-    padding: 50px;
-    margin:20px 150px;
-    background-color: #f0f0f0;
-    border-radius: 12px;
-    outline-style:auto;
-    outline-color: #303030;
-}
-
 .whoweare-p {
     text-indent: calc(45px);
     color:#303030;
@@ -157,10 +157,9 @@
     border-radius: 12px;
 }
 
-.link-ol{
-    list-style: inside;
-    padding-top: 40px;
-    padding-left: 95px;
+.link-ul{
+    text-align: center;
+    padding: 20px;
 }
 
 .services-ul {
@@ -217,3 +216,4 @@ a {
     margin-top: 20px;
     margin-bottom: 5px;
 }
+

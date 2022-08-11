@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { HashRouter as Router } from 'react-router-dom';
 import AppWithRouterAccess from './AppWithRouterAccess';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {

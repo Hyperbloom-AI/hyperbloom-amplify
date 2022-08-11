@@ -59,6 +59,7 @@ main[data-theme="light"] {
     justify-content: center;
     align-items: center;
     max-width: 940px;
+    height: 350px;
 }
 
 .site-description {
